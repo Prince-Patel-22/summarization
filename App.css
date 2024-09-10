@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --blue:#3a638b;
+    --txtSize:1rem;
+    /* --blue:rgb(255, 153, 0); */
+}
+
+.kanit-regular {
+    font-family: "Kanit", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.head-container {
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    color: white;
+    user-select: none;
+    padding: 1rem;
+}
+  
+
+.head{
+    background-color: var(--blue);
+    font-size: 2.8rem;
+    color: white;
+    /* padding: .7rem; */
+    box-shadow: 0 0 8px 1px var(--blue);
+    font-family: "Kanit", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* justify-content: center; */
+}
+
+.main {
+    /* background-color: #FAF9F6; */
+    background-color: #FAFDFF;
+    /* background-color: #fffff0; */
+    /* background-color: #F0F8FF; */
+    /* background-color: #F8F8FF; */
+
+    height: 100vh;
+}
+
+.mainbody{
+    padding: 1rem;
+}
+
+.txt{
+    resize: none;
+    width: 100%;
+    height: 220px;
+    border: 3px solid var(--blue);
+    margin-top: .5rem;
+    padding: .5rem;
+    border-radius: 5px;
+    font-size: var(--txtSize);
+}
+.txt:focus{
+    outline: #2d1aa5;
+    box-shadow: 0 0 5px 0px var(--blue);
+}
+
+/* .upper{ */
+/* 
+} */
+
+.lower{
+    margin-top: 1.5rem;
+}
+
+.btn{
+    padding: .6rem;
+    background-color: var(--blue);
+    border-radius: .51rem;
+    color: whitesmoke;
+    border: none;
+    cursor: pointer;
+    margin-top: .5rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    user-select: none;
+}
+
+.btn:hover{
+    box-shadow: 0 0 4px 0px var(--blue);
+}
+
+.para{
+    margin-top: .5rem;
+    font-size: var(--txtSize);
+}
+
+.nav-items {
+    font-size: 1rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    border: 2px solid rgb(255, 255, 255);
+    padding: .3rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .4rem;
+}
+
+.active{
+    background-color: white;
+    color: var(--blue);
+}
